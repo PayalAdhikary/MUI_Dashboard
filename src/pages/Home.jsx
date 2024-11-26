@@ -14,6 +14,7 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import AccordionDash from "../components/AccordianDash";
 import BarChart from "../charts/BarChart";
+import CountUp from 'react-countup';
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
                       <CreditCardIcon className="iconstyle"/>
                     </div>
                     <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fff" }}>
-                      $500.00
+                      $<CountUp delay={0.2} end={500} duration={0.3}/>
                     </Typography>
                     <Typography
                       gutterBottom
@@ -52,7 +53,7 @@ export default function Home() {
                       <BusinessCenterIcon className="iconstyle"/>
                     </div>
                     <Typography gutterBottom variant="h5" component="div" sx={{ color: "#fff" }}>
-                      $900.00
+                      $<CountUp delay={0.2} end={900} duration={0.3}/>
                     </Typography>
                     <Typography
                       gutterBottom

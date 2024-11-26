@@ -9,6 +9,7 @@ export const data = [
   ["Canada", 500],
   ["France", 600],
   ["RU", 700],
+  ["India", 1200],
 ];
 
 export default function GeoChart() {
@@ -28,7 +29,7 @@ export default function GeoChart() {
       ]}
       chartType="GeoChart"
       width="100%"
-      height="100%"
+      height="300px"
       data={data}
     />
   );
